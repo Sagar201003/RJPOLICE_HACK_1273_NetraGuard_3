@@ -68,4 +68,4 @@ Team Members & Responsibilities:
 ● Austin Paul - Pose estimation, Body measurement, License plate\
 ● Chandresh Tulsidas Menon - Deployment, Fire & smoke, License plate, backend\
 ● Marcus Michael - User Interface, Model integration, database\
-● Sagar Santoshkumar Shukla - Suspicious activity, Weapon detection, backend\
+● Sagar Santoshkumar Shukla - Suspicious activity, Weapon detection, backend
