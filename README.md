@@ -68,4 +68,7 @@ Team Members & Responsibilities:\
 ● Austin Paul - Pose estimation, Body measurement, License plate\
 ● Chandresh Tulsidas Menon - Deployment, Fire & smoke, License plate, backend\
 ● Marcus Michael - User Interface, Model integration, database\
-● Sagar Santoshkumar Shukla - Suspicious activity, Weapon detection, backend
+● Sagar Santoshkumar Shukla - Suspicious activity, Weapon detection, backend\
+![image](https://github.com/Sagar201003/RJPOLICE_HACK_1273_NetraGuard_3/assets/111193758/a1f37eaf-9c18-4332-bdbd-67ae6960c639)
+
+
