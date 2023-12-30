@@ -64,7 +64,7 @@ Software and Technology:
 7. Version control:
    ● GitHub
 
-Team Members & Responsibilities:
+Team Members & Responsibilities:\
 ● Austin Paul - Pose estimation, Body measurement, License plate\
 ● Chandresh Tulsidas Menon - Deployment, Fire & smoke, License plate, backend\
 ● Marcus Michael - User Interface, Model integration, database\
