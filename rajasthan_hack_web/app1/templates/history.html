@@ -1,0 +1,77 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetraGuard</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <!-- <link rel="stylesheet" href="history.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="historypage">
+    <nav class="navbar">
+        <div class="logo"><ion-icon name="shield-half-outline"></ion-icon>NetraGuard</div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#">Profile</a>
+                <div class="dropdown-content">
+                    <a href="#">User</a>
+                    <a href="#">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><ion-icon name="search-outline"></ion-icon></button>
+    </div>
+
+    <div class="history-container">
+        <div class="history-cards">
+            <div class="history-card">
+                <div class="left-part">
+                    <div class="timestamp">2024-01-15 12:30 PM</div>
+                    <div class="anomaly">Fighting</div>
+                </div>
+                <div class="right-part">
+                    <div class="anomaly-image-container">
+                        <img src="{% static 'images/fighting.jpg' %}" alt="Fighting Image">
+                    </div>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="left-part">
+                    <div class="timestamp">2024-01-15 12:30 PM</div>
+                    <div class="anomaly">Drilling</div>
+                </div>
+                <div class="right-part">
+                    <div class="anomaly-image-container">
+                        <img src="{% static 'images/fighting.jpg' %}" alt="Fighting Image">
+                    </div>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="left-part">
+                    <div class="timestamp">2024-01-15 12:30 PM</div>
+                    <div class="anomaly">Rope Climbing</div>
+                </div>
+                <div class="right-part">
+                    <div class="anomaly-image-container">
+                        <img src="/media/fighting.jpg" alt="Fighting Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
