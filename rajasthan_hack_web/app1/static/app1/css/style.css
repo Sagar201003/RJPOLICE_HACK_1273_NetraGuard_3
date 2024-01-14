@@ -4,7 +4,7 @@ body.homepage {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  overflow: hidden; /* Disable scrolling on the body */
+  overflow: hidden; 
   background: #000509;
 }
 
@@ -22,7 +22,7 @@ html {
 }
 
 .navbar {
-  background-color: #000509; /* GitHub theme color */
+  background-color: #000509; 
   color: white;
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,7 @@ html {
 .content {
   display: flex;
   flex: 1;
-  overflow: hidden; /* Disable scrolling in the content area */
+  overflow: hidden; 
 }
 
 .webcam-container {
@@ -85,14 +85,14 @@ html {
 }
 
 #webcam-video {
-  border-radius: 10px; /* Adjust the border radius as needed */
+  border-radius: 10px; 
 }
 
 .sidebar {
   flex: 1;
-  background-color: #0c1116; /* Different shade of color for the sidebar */
+  background-color: #0c1116; 
   padding: 20px;
-  height: 100vh; /* Extend sidebar to the bottom of the page */
+  height: 100vh; 
   border-left: 1px solid #2f80f6;
 }
 
@@ -186,6 +186,7 @@ html {
 
 /* history page css  */
 
+/* Styles for the search bar */
 .search-bar {
   display: flex;
   align-items: center;
@@ -195,14 +196,22 @@ html {
   margin-top: 20px;
 }
 
+.search-bar input,
+.search-bar button {
+  box-shadow: 0 0 20px rgba(47, 128, 246, 0.5); /* Box shadow for luminosity effect on input and button */
+  outline: none;
+}
+
 .search-bar input {
   padding: 10px;
-  border: none;
+  border: 2px solid #2f80f6;
   border-radius: 30px 0 0 30px;
   width: 800px;
   height: 50px;
   font-family: 'Poppins';
   font-size: 20px;
+  background-color: #000509; /* Darker background color for the input */
+  color: #2f80f6;
 }
 
 .search-bar button {
@@ -218,12 +227,12 @@ html {
 
 /* Styles for the history page */
 .history-container {
-  width: 600px; /* Set a maximum width for the container */
+  width: 600px; 
   margin: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the items inside the container */
+  align-items: center; 
 }
 
 .history-cards {
@@ -263,7 +272,7 @@ html {
 /* Styles for the history page */
 /* Styles for the history page */
 .history-card {
-  background-color: #fff;
+  background-color: #0c1116;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -273,40 +282,41 @@ html {
 }
 
 .left-part {
-  flex: 1; /* Use flex: 1 to take up the available space */
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
 
 .right-part {
-  width: 400px; /* Set a fixed width for the right part */
-  margin-left: 20px; /* Add spacing between the left and right parts */
-  border-radius: 10px; /* Rounded corners for the image container */
-  overflow: hidden; /* Hide overflowing content within the rounded container */
+  width: 400px; 
+  margin-left: 20px; 
+  border-radius: 10px; 
+  overflow: hidden; 
 }
 
 .timestamp {
   font-size: 14px;
-  color: #666;
-  margin-bottom: 10px; /* Add space between timestamp and anomaly */
+  color: #fff;
+  margin-bottom: 10px; 
 }
 
 .anomaly {
   font-size: 30px;
   font-weight: bold;
+  color: #fff;
 }
 
 .anomaly-image-container {
-  width: 100%; /* Set a fixed width for the image container */
+  width: 100%;
   /* height: 100px; Set a fixed height for the image container */
-  border-radius: 10px; /* Rounded corners for the image container */
-  overflow: hidden; /* Hide overflowing content within the rounded container */
+  border-radius: 10px;
+  overflow: hidden; 
 }
 
 .anomaly-image-container img {
-  width: 100%; /* Ensure the image fills the container */
-  height: 100%; /* Ensure the image fills the container */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
-  border-radius: 10px; /* Rounded corners for the image */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
 }
 
