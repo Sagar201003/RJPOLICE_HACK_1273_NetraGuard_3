@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden; /* Disable scrolling on the body */
+  background: #000509;
+}
+
+html {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #000509; /* GitHub theme color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #2f80f6;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-right: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Disable scrolling in the content area */
+}
+
+.webcam-container {
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#webcam-video {
+  border-radius: 10px; /* Adjust the border radius as needed */
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #0c1116; /* Different shade of color for the sidebar */
+  padding: 20px;
+  height: 100vh; /* Extend sidebar to the bottom of the page */
+  border-left: 1px solid #2f80f6;
+}
+
+/* Placeholder styles */
+.webcam-video,
+.sidebar-content {
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+  min-height: 200px;
+}
+
+.logo ion-icon{
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  height: 20px;
+}
+
+.hid{
+  display: none;
+}

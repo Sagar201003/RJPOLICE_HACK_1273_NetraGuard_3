@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetraGuard</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><ion-icon name="shield-half-outline"></ion-icon>NetraGuard</div>
+        <ul class="nav-links">
+            <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Dashboard</a></li>
+            <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">History</a></li>
+            <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a></li>
+            <li class="dropdown">
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Profile</a>
+                {% comment %} <div class="dropdown-content">
+                    <a href="#">User</a>
+                    <a href="#">Logout</a>
+                </div> {% endcomment %}
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="webcam-container" id="webcam-container">
+            <!-- Webcam video elements go here -->
+            <img src="{% url 'vid_inp' %}" id="webcam-video" >
+        </div>
+        <div class="sidebar">
+            <!-- Sidebar content goes here -->
+            <!-- Placeholder for sidebar content -->
+            <form method="POST" enctype="multipart/form-data" >
+                {% csrf_token %}
+                <input type="file" name="file" >
+                <input type="submit">
+            </form>
+            <div class="sidebar-content"></div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const webcamContainer = document.getElementById("webcam-container");
+            const webcamVideo = document.getElementById("webcam-video");
+        
+            // Check if the browser supports getUserMedia
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                // Request access to the webcam
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then((stream) => {
+                        // Display the webcam stream in the video element
+                        webcamVideo.srcObject = stream;
+                    })
+                    .catch((error) => {
+                        console.error("Error accessing webcam:", error);
+                    });
+            } else {
+                console.error("getUserMedia is not supported in this browser");
+            }
+        });
+    </script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
