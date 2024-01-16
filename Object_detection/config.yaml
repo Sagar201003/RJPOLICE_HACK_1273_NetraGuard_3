@@ -1,0 +1,8 @@
+path: C:/Users/shiva/OneDrive/Desktop/SagarProjects/MAJOR DL PROJECTS/YoloNEW1/data1  # dataset root dir
+train: images/train  # train images (relative to 'path')
+val: images/train  # val images (relative to 'path')
+
+# Classes
+names:
+  0: Human body
+  1: Weapon

@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./ultralytics/yolo/v8/detect/deep_sort_pytorch"
+    ]
+}
