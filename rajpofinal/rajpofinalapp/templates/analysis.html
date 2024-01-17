@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetraGuard</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="historypage">
+    <nav class="navbar">
+        <div class="logo"><ion-icon name="shield-half-outline"></ion-icon>NetraGuard</div>
+        <ul class="nav-links">
+            <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Dashboard</a></li>
+            <li><a href="{% url 'history' %}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">History</a></li>
+            <li><a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a></li>
+            <li class="dropdown">
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Profile</a>
+                {% comment %} <div class="dropdown-content">
+                    <a href="#">User</a>
+                    <a href="#">Logout</a>
+                </div> {% endcomment %}
+            </li>
+        </ul>
+    </nav>
+    <!-- component -->
+    <div class="anacon">
+        <div class="shadow-lg rounded-lg overflow-hidden">
+            <div class="py-3 px-5 bg-gray-50">Pie chart</div>
+            <canvas class="p-1 ml-40 mr-40" id="chartPie"></canvas>
+        </div>
+    </div>
+  
+  <!-- Required chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Chart pie -->
+  <script>
+    const dataPie = {
+      labels: ["Punching", "Climbing", "Drilling"],
+      datasets: [
+        {
+          label: "Overall Anomaly Analysis",
+          data: [300, 50, 100],
+          backgroundColor: [
+            "rgb(133, 105, 241)",
+            "rgb(164, 101, 241)",
+            "rgb(101, 143, 241)",
+          ],
+          hoverOffset: 4,
+        },
+      ],
+    };
+  
+    const configPie = {
+      type: "pie",
+      data: dataPie,
+      options: {},
+    };
+  
+    var chartBar = new Chart(document.getElementById("chartPie"), configPie);
+  </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
